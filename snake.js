@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
             case 37:
                 xVelocity = -1; yVelocity = 0;
                 break;
-            case 38:
+            case "ArrowUp":
                 xVelocity = 0; yVelocity = -1;
                 break;
             case 39:
