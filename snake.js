@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function keyPush(evt) {
         switch (evt.key) {
-            case 37:
+            case "ArrowLeft":
                 xVelocity = -1; yVelocity = 0;
                 break;
             case "ArrowUp":
