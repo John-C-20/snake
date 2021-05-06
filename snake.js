@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
             case 39:
                 xVelocity = 1; yVelocity = 0;
                 break;
-            case 40:
+            case "ArrowDown":
                 xVelocity = 0; yVelocity = 1;
                 break;
         }
