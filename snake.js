@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ctx = canv.getContext("2d");
     document.addEventListener("keydown", keyPush);
     setInterval(game, 1000 / 15);
+    playStatus = true; 
 
     playerXpos = playerYpos = 10; // initial player starting position
     gridSize = tileCount = 20; // gridSize is size of each snake piece, tilecount is amount of tiles 
