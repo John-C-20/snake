@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     canv.width = 400
     ctx = canv.getContext("2d");
     document.addEventListener("keydown", keyPush);
-    setInterval(game, 1000 / 15);
+    play = setInterval(game, 1000 / 15);
     playStatus = true; 
 
     playerXpos = playerYpos = 10; // initial player starting position
@@ -72,6 +72,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 break;
             case "ArrowDown":
                 xVelocity = 0; yVelocity = 1;
+                break;
+            case "P": 
+                if (playStatus) {
+                    clearInterval(play)
+                    playStatus = false 
+                } else {
+                    play = setInterval(game, 1000 / 15);
+                    playStatus = true 
+                }
                 break;
         }
     }
