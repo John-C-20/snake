@@ -82,6 +82,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     playStatus = true 
                 }
                 break;
+            case "p": 
+                if (playStatus) {
+                    clearInterval(play)
+                    playStatus = false 
+                } else {
+                    play = setInterval(game, 1000 / 15);
+                    playStatus = true 
+                }
+                break;
         }
     }
 
